@@ -82,6 +82,20 @@ def run_quiz(questions):
             duration = int(end_time - start_time)
     print("Congrats! You scored ", score,"/", len(questions), "in", duration, "seconds")
 
+"""
+Differntiate between different score brackets
+
+if score > 8:
+    print("Whoa, look at you being a master mind")
+elif score > 5:
+    print("Okay okay, your knowledge exceeded my expectations")
+else score > 4:
+    print("Not quite there yet - keep revising!")
+
+
+    print("---------------------------------")
+"""
+
 # runs quiz and prints UI to terminal
 run_quiz(questions)
 
