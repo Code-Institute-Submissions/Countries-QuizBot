@@ -26,7 +26,13 @@ else:
     print("Oh... I guess this is goodbye then :(")
     raise SystemExit()
 
-# questions to be asked with multiple choise answers
+# class for loop
+class Quiz:
+    def __init__(self, asked, answer):
+        self.asked = asked
+        self.answer = answer
+
+# questions to be asked and multiple choise answers
 question_asked = [
     "The longest coastline in the world belongs to which country?\n a) Canada\n b) Mexico\n c) Australia\n d) South Africa\n",
     "By size, which is the smallest country in The world?\n a) Haiti\n b) Nauru\n c) Vatican City\n d) Monaco\n",
@@ -40,7 +46,7 @@ question_asked = [
     "Finally, Sicily is home to which mountain?\n a) Mt Everest\n b) Mt Etna\n c) K2\n d) Kilimanjaro\n"
 ]
 
-# questions to be asked and their corresponding answers
+# questions asked with their corresponding answers
 questions = [
     Quiz(question_asked[0], "a"),
     Quiz(question_asked[1], "c"),
@@ -53,3 +59,19 @@ questions = [
     Quiz(question_asked[8], "c"),
     Quiz(question_asked[9], "b")
 ]
+
+# function to loop between the questions and counts score, increments of +1 if answer is correct.
+def run_quiz(questions):
+    """
+    defines score variable, set to 0
+    Uses 'for' loop to cycle between questions in order they're written.
+    Checks user's input for answer and compares against question's answer. 
+    Increments score by +1 if answer is correct.
+    Displays user's score out of 10
+    """
+    score = 0
+    for question in questions:
+        answer = input.lower(question.asked)
+        if answer == question.answer:
+            score += 1
+    print("Congrats! You scored ", score,"/", len(questions))
