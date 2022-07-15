@@ -6,9 +6,9 @@ print("Hi! I'm QuizBot. Create a username to start.")
 print("---------------------------------")
 username = input("Username: ")
 print("---------------------------------")
-print(f"Hey, {username}! Are you ready to test your country knowledge skills?")
+print(f"Hey, {username}! Are you ready to test your knowledge of countries?")
 print("---------------------------------")
-print("Note: answers should be 'a', 'b', or 'c' in lowercase. 'True/False' are case\nsensitive.")
+print("Note: answers should be 'a', 'b', or 'c' in lowercase. 'True/False' to be answered as 't/f'")
 
 # Checks to see whether user wants to start quiz or not
 
@@ -54,7 +54,7 @@ question_asked = [
     "7) Beirut is the capital of:\n\
          a) Isreal\n b) Syria\n c) Lebanon\n d) Jordan\n",
     "8) True or false: Russia has a larger surface area than Pluto?\n\
-         true\n false\n",
+         true (t)\n false (f)\n",
     "9) Where would you find the Bay of Pigs?\n\
         a) Maldives\n b) Hawaii\n c) Cuba\n d) Dominican Republic\n",
     "10) Finally, Sicily is home to which mountain?\n\
@@ -73,7 +73,7 @@ questions = [
     Quiz(question_asked[4], "c"),
     Quiz(question_asked[5], "a"),
     Quiz(question_asked[6], "c"),
-    Quiz(question_asked[7], "true"),
+    Quiz(question_asked[7], "t"),
     Quiz(question_asked[8], "c"),
     Quiz(question_asked[9], "b")
 ]
