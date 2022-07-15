@@ -46,6 +46,9 @@ question_asked = [
     "Finally, Sicily is home to which mountain?\n a) Mt Everest\n b) Mt Etna\n c) K2\n d) Kilimanjaro\n"
 ]
 
+# starts timer
+start_time = time.time()
+
 # questions asked with their corresponding answers
 questions = [
     Quiz(question_asked[0], "a"),
@@ -74,4 +77,7 @@ def run_quiz(questions):
         answer = input.lower(question.asked)
         if answer == question.answer:
             score += 1
-    print("Congrats! You scored ", score,"/", len(questions))
+            # stops timer
+            end_time = time.time()
+            duration = int(end_time - start_time)
+    print("Congrats! You scored ", score,"/", len(questions), "in", duration, "seconds")
