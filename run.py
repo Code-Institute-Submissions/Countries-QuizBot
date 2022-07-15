@@ -26,11 +26,16 @@ else:
     print("Oh... I guess this is goodbye then :(")
     raise SystemExit()
 
+
 # class for loop
 class Quiz:
+    """
+    create variable to be called and manipulated to check which question is called, and the corresponding answer.
+    """
     def __init__(self, asked, answer):
         self.asked = asked
         self.answer = answer
+
 
 # questions to be asked and multiple choise answers
 question_asked = [
@@ -63,36 +68,36 @@ questions = [
     Quiz(question_asked[9], "b")
 ]
 
+
 # function to loop between the questions and counts score, increments of +1 if answer is correct.
 def run_quiz(questions):
     """
     defines score variable, set to 0
     Uses 'for' loop to cycle between questions in order they're written.
-    Checks user's input for answer and compares against question's answer. 
+    Checks user's input for answer and compares against question's answer.
     Increments score by +1 if answer is correct.
     Displays user's score out of 10
     """
     score = 0
     for question in questions:
-        answer = input.lower(question.asked)
+        answer = input(question.asked)
         if answer == question.answer:
             score += 1
             # stops timer
             end_time = time.time()
             duration = int(end_time - start_time)
-    print("Congrats! You scored ", score,"/", len(questions), "in", duration, "seconds")
+    print("Congrats! You scored ", score, "/", len(questions), "in", duration, "seconds")
+
 
 """
 Differntiate between different score brackets
-
+total_score = score
 if score > 8:
     print("Whoa, look at you being a master mind")
 elif score > 5:
     print("Okay okay, your knowledge exceeded my expectations")
-else score > 4:
+else:
     print("Not quite there yet - keep revising!")
-
-
     print("---------------------------------")
 """
 
@@ -105,6 +110,7 @@ print("---------------------------------")
 
 # restart quiz
 if restart_quiz == "r":
+    start_time = time.time()
     run_quiz(questions)
 else:
     print("Goodbye, Quizbot out!")
