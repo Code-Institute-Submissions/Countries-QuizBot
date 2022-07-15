@@ -81,3 +81,17 @@ def run_quiz(questions):
             end_time = time.time()
             duration = int(end_time - start_time)
     print("Congrats! You scored ", score,"/", len(questions), "in", duration, "seconds")
+
+# runs quiz and prints UI to terminal
+run_quiz(questions)
+
+# sets an input variable for the end user to interact to either restart the quiz or not
+restart_quiz = input("Thanks for playing! Is your knowledge as good as you thought?\n To play again, press 'r', if not 'x':\n")
+print("---------------------------------")
+
+# restart quiz
+if restart_quiz == "r":
+    run_quiz(questions)
+else:
+    print("Goodbye, Quizbot out!")
+    raise SystemExit()
