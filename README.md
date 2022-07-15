@@ -4,7 +4,7 @@
 * Quiz Bot is intended to come across as having a chatty, informal tone as if you're talking to a friend. This is give a sensation of having fun and being relaxed, rather than the user feel as though they're interacting with a computer.
 
 # Mindmap/Ideas
-<img alt= "picture of a mindmap setting the basic ideas for project" src= "../basic_mindmap.png">
+![](vscode-remote://tkingston-countriesquiz-4hkbdy95x7b.ws-eu54.gitpod.io/workspace/Countries-QuizBot/README_Images/Basic_mindmap.png)
 
 * Seen from the mind map is a simple flowchart of the order of how the code is intended to run:
 1. First, introduce the game, and get user interaction as soon as possible by getting them to create and input their username.
@@ -49,3 +49,28 @@
     * Getting this to work would require the use of calling the 'score' variable, and using the multiplication tool either using (score * 2 , or score * 0), triggered by 'if answer == question.answer:' which had be altered to apply to the new question.
 
 * Instead of having the interface display in the terminal, expand the code to work in a GUI (using TKinter). This will make it more user friendly and can be fully customised to any theme/ideology the developer wants. 
+* Expand the depth of the game/quiz by having a library of different questions and let the user decide which categories they would like to be quizzed on (for example: only questions about the UK, or world leaders, or historic events.)
+* Restriciting input by only allowing ("a, b, or c & t/f"), resulting in an error if another character is input.
+
+# Program Testing
+
+* To confirm all features work as intended, all the possible outcomes in the terminal were testing. These being: 
+    * User typing 'y' to start the quiz and the questions appearing in order.
+    * User typing 'n' to not start the quiz and being exited back to main terminal with exit statment printed. 
+    * User getting all questions correct and '10/10' for score, displaying, likewise with any score they get e.g. 4/10
+    * The timer being accurate from when the quiz starts and the final question being answered.
+    * User replaying the quiz by typing 'r' when prompted and all questions being redeployed with the timer resetting. 
+    * User ending the quiz after running it once and second exit statement being printed as they're placed back into the main terminal.
+
+# User Testing
+
+* After a couple runs of user testing without the developer's input (me), a couple key points of feedback were made: 
+    * A misinterpretation of how this sentence (see image below) was interpreted. The test user read it as 'test your country knowledge' as if the test is knowledge about their country, and not a test about their knowledge on countries as general. This has been changed to be more specific and clear - "Are you ready to test your knowledge of countries?"
+    ![](vscode-remote://tkingston-countriesquiz-4hkbdy95x7b.ws-eu54.gitpod.io/workspace/Countries-QuizBot/README_Images/misinterpretation.png)
+    * Additionally, question number 7 is a true/false question. Originally the code was written to accept 'true' as an answer, however the user naturally typed 't', assuming it followed suit of all the other questions being 'a, b, or c'. This has been changed to reflect the feedback in both the code which checks the answer against user's input, and in the 'notes' section which is displayed before the quiz starts.
+    ![](vscode-remote://tkingston-countriesquiz-4hkbdy95x7b.ws-eu54.gitpod.io/workspace/Countries-QuizBot/README_Images/old_answer_format.png)
+
+    # Bugs
+
+    * Implementing the (dot)lower attribute to the user's input for answers, the terminal kept returning 'the object has no attribute.' Having worked in the previous draft test IDE, the attribute was removed and a contingency of advising the user in the 'notes' section, that all answers are case sensitive and lowercase.
+    ![](vscode-remote://tkingston-countriesquiz-4hkbdy95x7b.ws-eu54.gitpod.io/workspace/Countries-QuizBot/README_Images/lower_attribute_bug.png)

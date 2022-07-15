@@ -39,27 +39,17 @@ class Quiz:
 
 # questions to be asked and multiple choise answers
 question_asked = [
-    "1)The longest coastline in the world belongs to which country?\n\
-         a) Canada\n b) Mexico\n c) Australia\n d) South Africa\n",
-    "2) By size, which is the smallest country in The world?\n\
-         a) Haiti\n b) Nauru\n c) Vatican City\n d) Monaco\n",
-    "3) The unicorn is the national animal of which country?\n\
-        a) Ireland\n b) Scotland\n c) England\n d) Wales\n",
-    "4) Where would you find the world\'s tallest building?\n\
-         a) Dubai\n b) UAE\n c) France\n d) America\n",
-    "5) Officially, the hottest country in the world is...\n\
-        a) Mali\n b) Tuvalu\n c) Djibouti\n d) Malta\n",
-    "6) ...And the coldest country?\n\
-         a) Russia\n b) Iceland\n c) Norway\n d) Antarctica\n",
-    "7) Beirut is the capital of:\n\
-         a) Isreal\n b) Syria\n c) Lebanon\n d) Jordan\n",
-    "8) True or false: Russia has a larger surface area than Pluto?\n\
-         true (t)\n false (f)\n",
-    "9) Where would you find the Bay of Pigs?\n\
-        a) Maldives\n b) Hawaii\n c) Cuba\n d) Dominican Republic\n",
-    "10) Finally, Sicily is home to which mountain?\n\
-         a) Mt Everest\n b) Mt Etna\n c) K2\n d) Kilimanjaro\n"
-]
+    "1)The longest coastline in the world belongs to which country?\n a) Canada\n b) Mexico\n c) Australia\n d) South Africa\n",
+    "2) By size, which is the smallest country in The world?\n a) Haiti\n b) Nauru\n c) Vatican City\n d) Monaco\n",
+    "3) The unicorn is the national animal of which country?\n a) Ireland\n b) Scotland\n c) England\n d) Wales\n",
+    "4) Where would you find the world\'s tallest building?\n a) Dubai\n b) UAE\n c) France\n d) America\n",
+    "5) Officially, the hottest country in the world is...\n a) Mali\n b) Tuvalu\n c) Djibouti\n d) Malta\n",
+    "6) ...And the coldest country?\n a) Russia\n b) Iceland\n c) Norway\n d) Antarctica\n",
+    "7) Beirut is the capital of:\n a) Isreal\n b) Syria\n c) Lebanon\n d) Jordan\n",
+    "8) True or false: Russia has a larger surface area than Pluto?\n true (t)\n false (f)\n",
+    "9) Where would you find the Bay of Pigs?\n a) Maldives\n b) Hawaii\n c) Cuba\n d) Dominican Republic\n",
+    "10) Finally, Sicily is home to which mountain?\n a) Mt Everest\n b) Mt Etna\n c) K2\n d) Kilimanjaro\n"
+    ]
 
 # starts timer
 start_time = time.time()
