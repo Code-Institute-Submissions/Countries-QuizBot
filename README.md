@@ -62,6 +62,7 @@
     * User replaying the quiz by typing 'r' when prompted and all questions being redeployed with the timer resetting. 
     * User ending the quiz after running it once and second exit statement being printed as they're placed back into the main terminal.
     * Deployed project tested on Chrome, Firefox and Safari. However, Safari won't register the user's input.
+    * Validated Python code through PEP8. Returned 'lines too long' but no dysfunctioning code (http://pep8online.com/checkresult) 
 
 # User Testing
 
@@ -84,3 +85,15 @@
 * Questions for the quiz provided by and randomly selected at anadcenturousworld.com/countries-quiz-questions/
 * Idea for the game timer came from Leon Marsden on Youtube - https://www.youtube.com/watch?v=l0MI6TILasM
 * Inspiration for adaptation of the game code by Mike Dan (Giraffe Academy)
+
+# Deployment
+
+* Ensure file name and description are correct so the file can be found in my personal repository
+* Ensure visibility is set to public so the file can be forked, this is done by altering the visibility tab in settings.
+* On Heroku: 
+    1) Link my GitHub account to the app and select the correct file by searching for it
+    2) Open the settings tab and edit 'Config var' with a key of 'PORT' with value '8000'
+    3) Add Python and NodeJS build pack, saving the changes afterwards.
+    4) In the deployment tab, ensure the right file is selected
+    5) Choose either an automatic deploy, or a manual deploy.
+    6) Share the link where needs be.
