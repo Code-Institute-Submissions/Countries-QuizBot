@@ -3,6 +3,14 @@
 * Although anybody could access and run this quiz themselves, the suitability and content are targeted towards the expectations of adults, or people who have a strong knowledge/interest in geography.
 * Quiz Bot is intended to come across as having a chatty, informal tone as if you're talking to a friend. This gives a sensation of having fun and being relaxed, rather than the user feeling as though they're interacting with a computer.
 
+# How to play
+
+* Read the prompts given in the terminal
+* Read the questions and multiple choice options presented with them
+* Input your answer, either 'a, b, c, or t/f'
+* The terminal will then relay the results back to the user
+* decide whether to play again or exit
+
 # Mindmap/Ideas
 ![](vscode-remote://tkingston-countriesquiz-4hkbdy95x7b.ws-eu54.gitpod.io/workspace/Countries-QuizBot/README_Images/Basic_mindmap.png)
 
@@ -51,6 +59,7 @@
 * Instead of having the interface display in the terminal, expand the code to work in a GUI (using TKinter). This will make it more user-friendly and can be fully customised to any theme/ideology the developer wants. 
 * Expand the depth of the game/quiz by having a library of different questions and let the user decide which categories they would like to be quizzed on (for example only questions about the UK, world leaders, or historic events.)
 * Restricting input by only allowing ("a, b, or c & t/f"), resulting in an error if another character is input.
+* Provide answers at the end of the game so it becomes a learning platform of knowledge
 
 # Program Testing
 
@@ -85,15 +94,16 @@
 * Questions for the quiz provided by and randomly selected at anadcenturousworld.com/countries-quiz-questions/
 * Idea for the game timer came from Leon Marsden on Youtube - https://www.youtube.com/watch?v=l0MI6TILasM
 * Inspiration for adaptation of the game code by Mike Dan (Giraffe Academy)
+* Code Institute for the deployment terminal
 
 # Deployment
 
 * Ensure file name and description are correct so the file can be found in my personal repository
 * Ensure visibility is set to public so the file can be forked, this is done by altering the visibility tab in settings.
 * On Heroku: 
-    1) Link my GitHub account to the app and select the correct file by searching for it
+    1) Link my GitHub account to the app and fork the correct file by searching for it
     2) Open the settings tab and edit 'Config var' with a key of 'PORT' with value '8000'
-    3) Add Python and NodeJS build pack, saving the changes afterwards.
+    3) Add Python and NodeJS build pack, in that order, saving the changes afterwards.
     4) In the deployment tab, ensure the right file is selected
     5) Choose either an automatic deploy, or a manual deploy.
     6) Share the link where needs be.
